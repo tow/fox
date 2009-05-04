@@ -1,0 +1,159 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <title>FoX</title>
+</head>
+
+<body>
+<div class="hentry p1 post publish alt">
+      <div class="entry-content">
+        <h3 id="_news_2">NEWS</h3><div style="clear:left"></div>
+<div class="para"><p>FoX-4.0.2 is released, with minor bugfixes on top of 4.0</p></div>
+<hr />
+<div class="para"><p>FoX-4.0 is released, with a fully validating parser, extended DOM capabilities, and improved portability.</p></div>
+<hr />
+<div class="para"><p>Tutorial documentation for the <a href="http://www.uszla.me.uk/FoX/iFaX/iFaX.4/iFaX.4.html" title="external link to http://www.uszla.me.uk/FoX/iFaX/iFaX.4/iFaX.4.html" class="http">SAX</a> and <a href="http://www.uszla.me.uk/FoX/iFaX/iFaX.5/iFaX.5.html" title="external link to http://www.uszla.me.uk/FoX/iFaX/iFaX.5/iFaX.5.html" class="http">DOM</a> interfaces is <a href="http://www.uszla.me.uk/FoX/iFaX/" title="external link to http://www.uszla.me.uk/FoX/iFaX/" class="http">now available</a>.</p></div>
+
+<hr />
+<div class="para"><p>Please see the <a href="compat/">compiler compatibility matrix</a> for details of compiler support</p></div>
+<hr />
+<div class="para"><p>Go straight to <a href="http://www.uszla.me.uk/FoX/source/">download</a>.</p></div>
+<h2 id="_fox_a_fortran_xml_library_2">FoX: a Fortran XML library</h2>
+<div class="sectionbody">
+<div class="para"><p>FoX, (Fortran XML) is a library, written entirely in Fortran, designed to allow the easy use of XML from Fortran programs.</p></div>
+<div class="para"><p>FoX caters for both XML output and input.</p></div>
+
+<h4 id="_output_2">Output</h4>
+<div class="ilist"><ul>
+<li>
+<p>
+A streaming output API which can generate all constructs permitted by XML and XML Namespaces (1.0 and 1.1). The output is guaranteed well-formed, and optional validity checks can also be made.
+</p>
+</li>
+<li>
+<p>
+High-level output APIs to allow the generation of domain-specific XML documents, for:
+</p>
+<div class="ilist"><ul>
+<li>
+<p>
+<a href="http://cmlcomp.org" title="external link to http://cmlcomp.org" class="http">CMLComp</a>, (see also <a href="http://cml.sf.net" title="external link to http://cml.sf.net" class="http">CML</a>)
+
+</p>
+</li>
+<li>
+<p>
+<a href="http://code.google.com/apis/kml/" title="external link to http://code.google.com/apis/kml/" class="http">KML</a> in beta, see <a href="wkml/">WKML</a>
+</p>
+</li>
+</ul></div>
+</li>
+</ul></div>
+<h4 id="_input_2">Input</h4>
+<div class="ilist"><ul>
+
+<li>
+<p>
+A fully validating parser, compliant with XML-1.0/1.1 and XML-Namespaces 1.0/1.1, xml:id, and xml:base
+</p>
+</li>
+<li>
+<p>
+A SAX-like interface to this parser, offering all SAX-2 callbacks
+</p>
+</li>
+<li>
+<p>
+A full W3C DOM interface, implementing all of DOM Core Level 1 and 2, and a substantial part of Level 3.
+</p>
+</li>
+</ul></div>
+<div class="para"><p>FoX is in use by several leading scientific simulation codes:</p></div>
+
+<div class="ilist"><ul>
+<li>
+<p>
+<a href="http://www.abinit.org/" title="external link to http://www.abinit.org/" class="http">Abinit</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://www.tcm.phy.cam.ac.uk/castep/" title="external link to http://www.tcm.phy.cam.ac.uk/castep/" class="http">CASTEP</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://www.kjemi.uio.no/software/dalton/" title="external link to http://www.kjemi.uio.no/software/dalton/" class="http">Dalton</a>
+
+</p>
+</li>
+<li>
+<p>
+<a href="http://www.cse.scitech.ac.uk/ccg/software/DL_POLY/" title="external link to http://www.cse.scitech.ac.uk/ccg/software/DL_POLY/" class="http">DL_POLY</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://www.ivec.org/GULP/" title="external link to http://www.ivec.org/GULP/" class="http">GULP</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://openmopac.net/" title="external link to http://openmopac.net/" class="http">OpenMopac</a>
+
+</p>
+</li>
+<li>
+<p>
+<a href="http://www.isis.rl.ac.uk/rmc/" title="external link to http://www.isis.rl.ac.uk/rmc/" class="http">RMCProfile</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://www.uam.es/departamentos/ciencias/fismateriac/siesta/" title="external link to http://www.uam.es/departamentos/ciencias/fismateriac/siesta/" class="http">SIESTA</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://accelrys.com/products/materials-studio/modules/VAMP.html" title="external link to http://accelrys.com/products/materials-studio/modules/VAMP.html" class="http">VAMP</a>
+
+</p>
+</li>
+</ul></div>
+<h4 id="_background_2">Background</h4>
+<div class="para"><p>Fortran and XML do not mix well. However, the vast majority of computational scientific codes in use, and under development, today, are written in Fortran, for a variety of reasons - and it would be nice if the output from these codes was available marked up in XML for better data management.</p></div>
+<div class="para"><p>Equally, XML provides an increasingly common serialization format for exchange of data common to a domain. Fortran codes need to be able to produce and access information in XML formats.</p></div>
+<div class="para"><p>There are a number of potential approaches to integrating Fortran codes into an XML-centric data world, including cross-language linking against existing XML libraries written in C; or having a separate post-processing stage which marks up unchanged text data from existing codes. However, with FoX, I have adopted the approach of writing the entire library in fully standard-compliant Fortran 95. This enables seamless use of FoX in any existing code, with no issues of cross-language compilation, or maintenance of separate processing stages.</p></div>
+<h3 id="_details_2">Details</h3><div style="clear:left"></div>
+<h4 id="_download_documentation_2">Download/Documentation</h4>
+<div class="para"><p>Release versions of FoX may be downloaded from <a href="http://source.uszla.me.uk/FoX/" title="external link to http://source.uszla.me.uk/FoX/" class="http">http://source.uszla.me.uk/FoX/</a>.</p></div>
+
+<div class="para"><p>The currently released version is 4.0.2. Full API documentation for is available within the source tarball. or at <a href="http://www.uszla.me.uk/FoX/DoX/" title="external link to http://www.uszla.me.uk/FoX/DoX/" class="http">DoX</a></p></div>
+<div class="para"><p>Several forms of documentation are available:</p></div>
+<div class="ilist"><ul>
+<li>
+<p>
+<a href="http://www.uszla.me.uk/FoX/iFaX/" title="external link to http://www.uszla.me.uk/FoX/iFaX/" class="http">Tutorial documentation for SAX and DOM</a>.
+</p>
+</li>
+<li>
+<p>
+<a href="http://www.uszla.me.uk/FoX/WCML_tutorial.html" title="external link to http://www.uszla.me.uk/FoX/WCML_tutorial.html" class="http">Overview of how to mark up a code using WCML</a>
+</p>
+
+</li>
+<li>
+<p>
+<a href="http://www.uszla.me.uk/FoX/DoX/" title="external link to http://www.uszla.me.uk/FoX/DoX/" class="http">Full API documentation.</a>
+</p>
+</li>
+</ul></div>
+<h4 id="_license_2">License</h4>
+<div class="para"><p>FoX is licensed under a 3-clause BSD license; which is to say that it may be used freely by any and all users; redistributed in source or binary form; provided always that the copyright notices are maintained. This is the <a href="http://www.uszla.me.uk/FoX/DoX/Licensing.html" title="external link to http://www.uszla.me.uk/FoX/DoX/Licensing.html" class="http">full license text</a>.</p></div>
+<h4 id="_mailing_list_2">Mailing list</h4>
+<div class="para"><p>There is a mailing list for FoX users, where announcements of bug-fixes, new releases, and general help/discussion may be directed. <a href="http://www.uszla.me.uk/cgi-bin/mailman/listinfo/FoX/" title="external link to http://www.uszla.me.uk/cgi-bin/mailman/listinfo/FoX/" class="http">Subscription information here</a>.</p></div>
+
+<h4 id="_development_2">Development</h4>
+<div class="para"><p>FoX is under continuing development. The development process is open, and patches for bug-fixes or further features are encouraged. The source code is kept within the git revision control system. The primary source code repository is available at <a href="http://www.uszla.me.uk/git/FoX.git" title="external link to http://www.uszla.me.uk/git/FoX.git" class="http">http://www.uszla.me.uk/git/FoX.git</a>, and may be <a href="http://uszla.me.uk/gitweb/FoX.git/" title="external link to http://uszla.me.uk/gitweb/FoX.git/" class="http">browsed online</a>.</p></div>
+</div>
+</body>
