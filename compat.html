@@ -1,0 +1,54 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>FoX compatibility matrix</title>   
+</head>
+
+<body>
+<div class="hentry p1 post publish alt">
+      <div class="entry-content">
+        <h1>Compatibility with Fortran compilers.</h1>
+<p>I have gone to some effort to ensure that FoX will work on as wide a variety of Fortran 95 compilers as possible.</p>
+<p>Nevertheless, the complexity of FoX is such that it has managed to trigger bugs on all compilers. While it has been possible to work around bugs in most cases, it is not possible to make FoX work with older versions of some compilers.</p>
+<p>As of version 3.1, FoX also includes a “dummy library” mode. Compiling in this mode provides all of the interfaces but no functionality. In this mode, FoX can be compiled on all known Fortran 90 compilers. (See <a href="http://www.uszla.me.uk/FoX/DoX/Compilation.html#dummy_library" title="external link to http://www.uszla.me.uk/FoX/DoX/Compilation.html#dummy_library" class="http">documentation</a> for further details)</p>
+<h3>By compiler:</h3>
+<p>Below is a list, ordered by compiler vendor, of versions that have been tested with FoX 3.1.</p>
+
+<table>
+<tr><th>Vendor</th><th>Failing versions</th><th>Working versions</th></tr>
+<tr><td>Absoft</td><td>10.0.7</td><td></td></tr>
+<tr><td>Compaq Visual Fortran</td><td>All versions</td><td></td></tr>
+<tr><td>F</td><td>All versions</td><td></td></tr>
+<tr><td>g95</td><td>0.9</td><td>Current release</td></tr>
+
+<tr><td>gfortran</td><td>4.0-4.1</td><td>4.2</td></tr>
+<tr><td>Lahey</td><td></td><td>7.1<sup>1</sup></td></tr>
+<tr><td>Intel</td><td>7.1, 9.0</td><td>8.1, 9.0<sup>2</sup>, 9.1, 10.1</td></tr>
+<tr><td>NAG</td><td>5.0</td><td>5.1</td></tr>
+
+<tr><td>Pathscale</td><td></td><td>2.5, 3.0</td></tr>
+<tr><td>PGI</td><td>5.1</td><td>6.1<sup>3</sup>, 6.2<sup>3</sup>, 7.0<sup>3</sup>, 7.1<sup>3</sup></td></tr>
+<tr><td>Sun</td><td>6.0</td><td>8.3<sup>4</sup></td></tr>
+
+<tr><td>XLF</td><td></td><td>10.01, 10.1.0</td></tr>
+</table>
+<p><sup>1</sup>
+WXML, WCML, and SAX compile and work correctly, DOM fails. Lahey have been informed of this bug in their compiler. Furthermore, many of the tests are reported as failing due to another compiler bug - this can be ignored.</p>
+<p><sup>2</sup>
+Intel 9.0 will not compile SAX &amp; DOM correctly.</p>
+<p><sup>3</sup>
+Note that although PGI 6.x and 7.0 are listed as working, there are significant bugs in the PGI compiler suite such that only the WXML, SAX, and DOM modules work correctly; WCML is not fully functional. I have mixed reports from version 7.1.</p>
+
+<p><sup>4</sup>
+ALthough the Sun Studio compiler 8.3 is listed as working, in fact only the SAX module works. The Sun compiler fails to compile all other modules correctly. Sun have been informed of this bug in their compiler.</p>
+<h4>Other compilers</h4>
+<p>Previous versions of FoX have been tested successfully with Lahey 6.20 and Pathscale 2.4, but I no longer have access to copies of these compilers. Further reports of success or failure are welcome.</p>
+      </div> <!-- .entry-content -->
+    </div> <!-- #post-ID -->
+
+    </div><!-- #primarycontent .hfeed -->
+
+  </div> <!-- #current-content -->
+
+</body>
+</html>
