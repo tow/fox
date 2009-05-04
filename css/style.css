@@ -46,7 +46,7 @@ body {
 	background: #3371A3;
 	height: 120px;
 	width: 780px;
-	background: #4397DB url('img/street.jpg') 95% 50% no-repeat;
+	background: #4397DB url('../img/street.jpg') 95% 50% no-repeat;
 	}
 
 #primary {
