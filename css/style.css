@@ -1,15 +1,3 @@
-/*
-Theme Name: K2
-Theme URI: http://getk2.com
-Description: Configure from the <a href="themes.php?page=k2-options">K2 Options Panel</a>. Visit the <a href="http://getk2.com/forum">support forums</a>, <a href="http://k2.stikipad.com/docs/show/">the wiki</a> or <a href="http://code.google.com/p/kaytwo/issues/list">the bug tracker</a>.</p><p><small>Developed by <a href="http://binarybonsai.com">Michael</a>, <a href="http://chrisjdavis.org">Chris</a>, <a href="http://zeo.unic.net.my">Zeo</a>, <a href="http://stevelam.org">Steve</a> and <a href="http://nybblelabs.org.uk">Ben</a>. Protected by <a href="http://www.opensource.org/licenses/gpl-license.php">GPL</a>.</small>
-Version: 0.95 RC1
-Author: Various Artists
-Author URI: http://binarybonsai.com
-
-CSS Documentation: http://k2.stikipad.com/docs/show/CSS+Overview
-*/
-
-
 
 /*- Page Structure */
 
@@ -31,10 +19,8 @@ img {
 	}
 
 body {
-	/* font: 62.5% 'Lucida Grande', Verdana, Arial, Sans-Serif; */ /* Resets 1em to 10px */
         font: 75% Utopia, serif;
 	color: #444;
-	/*background: #EDEDED;*/
 	background: #B3D4F8;
 	text-align: center;
 	margin: 0 0 30px;
